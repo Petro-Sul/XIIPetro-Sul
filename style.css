@@ -1,0 +1,681 @@
+main {
+position: relative;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b0a11;
+  color: white;
+}
+
+.logo img {
+  height: 80px;
+  margin-right: 30px;
+}
+
+
+header {
+  background-color: #1f1f1f;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+ 
+  padding: 1rem 2rem;
+}
+
+.menu {
+  z-index: 1000;
+  position: relative; /* Necessário para o z-index funcionar */
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;                
+  padding: 0;
+  margin: 0 auto;
+
+}
+
+
+.menu ul {
+  list-style: none;
+  gap: 10px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+ 
+  
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  background-color: #2a2a2a;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+ 
+}
+
+.menu li a:hover {
+  background-color: #444;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.destaque {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;                
+  padding: 0;
+  margin: 0 auto;
+}
+
+
+
+.destaque img {
+  
+  width: 800px;
+  border-radius: 10px;
+  
+}
+
+
+#contador-regressivo {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #1e272e;
+  border-radius: 10px;
+  max-width: 500px; /* Largura máxima do contador */
+  margin: 20px auto; /* Centraliza o contador na página */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#contador-regressivo h2 {
+  color: #2ecc71;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.tempo {
+  display: flex;
+  justify-content: space-around; /* Distribui os blocos de tempo */
+}
+
+.bloco-tempo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2c3e50; /* Fundo escuro para os blocos */
+  color: #2ecc71;
+  padding: 15px;
+  border-radius: 5px;
+  min-width: 80px; /* Largura mínima para cada bloco */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.valor {
+  font-size: 2.5em; /* Tamanho grande para os números */
+  font-weight: bold;
+  line-height: 1;
+}
+
+.rotulo {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin-top: 5px;
+  color: #bdc3c7;
+}
+
+#mensagem-final {
+    color: #28a745; /* Cor verde para a mensagem final */
+    font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;                
+  padding: 0;
+  margin: 0 auto;
+
+}
+
+.cards li img {
+  border-radius: 10px;
+  list-style: none;
+
+}
+
+.cards li a{
+  
+  transition: transform 0.2s ease;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.cards li a:hover {
+  transform: scale(1.05);
+  
+}
+
+.texto-sobre-imagem,
+.texto-sobre-imagem2 {
+  
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  border-radius: 10px;  
+  color: white;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+
+}
+
+.texto-sobre-imagem h2,
+.texto-sobre-imagem2 h2 {
+  margin-top: 0; /* Remove margem padrão do h2 */
+  font-size: 1.5em; /* Ajuste o tamanho da fonte do título */
+}
+
+.texto-sobre-imagem p,
+.texto-sobre-imagem2 p {
+  font-size: 0.9em; /* Ajuste o tamanho da fonte do parágrafo */
+  margin-bottom: 1.5em; /* Espaço antes do botão */
+}
+
+
+
+.beca{
+  position: absolute;
+  display: block;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 700px;
+  z-index: 10;
+  left: 50%;
+  top:11%;               
+  padding: 0;
+  margin: 20px auto;
+
+}
+
+.rebeca {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.rebeca li a{
+  flex: 1;
+  max-width: 300px;
+ 
+}
+
+
+.botaoaqui {
+  
+border-radius: 10px;
+width: 100px;
+box-shadow: none;  
+border: none;
+cursor: pointer;
+}
+
+.botaoaqui button {
+font-weight: bold;
+border: 2px solid #00b60f;
+background-color: #00b60f;
+border-radius: 10px;
+width: 100px;
+height: 35px;
+box-shadow: none;  
+cursor: pointer;
+transition: all 0.3s ease;
+
+}
+
+.botaoaqui button:hover {
+  color: #00b60f;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.texto-sobre-imagem2 {
+ 
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 10px;
+
+}
+
+
+/* --- CSS CORRIGIDO E RESPONSIVO --- */
+
+/* Estilos base que funcionarão bem no MOBILE PRIMEIRO */
+.sobre {
+  margin-top: 60px; /* Margem menor para mobile */
+  background-color: #005c00;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  
+  /* PADDING RESPONSIVO: Valores pequenos para telas menores */
+  padding: 40px 25px; /* 40px em cima/embaixo, 25px nas laterais */
+}
+
+.sobre h2 {
+  text-align: center;
+  font-size: 1.5em; /* Tamanho de fonte bom para mobile */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 25px 0;
+}
+
+.sobre p {
+  font-size: 1em; /* Tamanho de fonte bom para mobile */
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0; /* Resetamos a margem aqui */
+}
+
+/* Adiciona um espaço apenas entre os parágrafos */
+.sobre p + p {
+  margin-top: 20px;
+}
+
+/* ======================================================= */
+/* A MÁGICA ACONTECE AQUI: Estilos para telas maiores */
+/* ======================================================= */
+
+@media (min-width: 1400px) { /* Estes estilos só aplicam se a tela for MAIOR que 1400px */
+  
+  .sobre {
+    margin-top: 150px; /* Retorna a sua margem original */
+
+    /* Retorna os valores de padding grandes apenas em telas largas */
+    padding-left: 500px;
+    padding-right: 500px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  /* Retorna os tamanhos de fonte originais para desktop */
+  .sobre h2 {
+    font-size: 1.8em;
+  }
+
+  .sobre p {
+    font-size: 1.1em;
+    line-height: 1.7;
+  }
+  
+  /* Retorna a margem original entre os parágrafos no desktop */
+  .sobre p + p {
+    margin-top: 50px;
+  }
+}
+
+
+
+/* Estiliza o UL que TEM a classe "apoiadores" */
+ul.apoiadores {
+  list-style-type: none; /* Remove as bolinhas */
+  padding: 0;            /* Remove o padding padrão da lista */
+  margin: 0;             /* Remove a margem padrão da lista */
+  display: flex;         /* Ativa o layout flexbox */
+  flex-wrap: wrap;       /* Permite que os itens quebrem para a próxima linha se não houver espaço */
+  align-items: center;   /* Alinha os itens verticalmente ao centro */
+  justify-content: center; /* Opcional: alinha os itens ao início. Pode usar center, space-around, etc. */
+}
+
+/* Estiliza os LIs que estão DENTRO de um elemento com a classe "apoiadores" */
+.apoiadores li {
+  margin-right: 15px; /* Espaçamento à direita de cada item */
+  margin-bottom: 10px; /* Espaçamento inferior para o caso de quebra de linha */
+}
+
+.apoiadores li:last-child {
+  margin-right: 0;   /* Remove a margem direita do último item */
+}
+
+/* Estiliza as IMGs que estão DENTRO de um elemento com a classe "apoiadores" */
+.apoiadores img {
+  max-width: 100px;  /* Alterado de 5%. 5% pode ser muito pequeno dependendo do container pai. Ajuste conforme necessário. */
+  height: auto;      /* Mantém a proporção da imagem */
+  display: block;    /* Ajuda a evitar espaços extras abaixo das imagens */
+}
+
+
+
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+   .navbar {
+        flex-direction: column; /* Empilha o logo e o menu */
+        align-items: center;   /* Centraliza os itens empilhados (logo e depois o bloco do menu) */
+        padding: 1rem;         /* Reduz um pouco o padding do navbar */
+    }
+
+    .logo img {
+        height: 60px;         /* Logo um pouco menor */
+        margin-right: 0;      /* Remove a margem direita, já que vai ser centralizado ou empilhado */
+        margin-bottom: 15px;  /* Adiciona espaço abaixo do logo quando empilhado com o menu */
+    }
+
+    .menu {
+        /* O .menu em desktop tem 'margin: 0 auto;' e 'justify-content: center'
+           Quando o .navbar vira column, o .menu vai ocupar a largura disponível abaixo do logo.
+           Vamos fazer o .menu e seus itens ocuparem a largura e centralizar o texto dos links.
+        */
+        width: 100%;
+        flex-direction: column; /* Se o menu em si precisar empilhar algo, embora o ul já vá */
+        gap: 10px; /* Espaço entre os itens do menu quando empilhados */
+        align-items: center; /* Centraliza os itens da lista (ul) se houver largura sobrando */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Itens do menu (li) ficam em coluna */
+        width: 100%;            /* Lista ocupa toda a largura disponível */
+        gap: 8px;              /* Espaço entre os links do menu */
+    }
+
+    .menu li {
+        width: 100%; /* Cada item da lista ocupa 100% da largura */
+        display: block; /* Garante que o li ocupe a linha toda */
+    }
+
+    .menu li a {
+        display: block;       /* Faz o link preencher o <li> */
+        text-align: center;   /* Centraliza o texto do link */
+        padding: 12px 10px;   /* Ajusta o padding dos links */
+        width: 90%;           /* Link ocupa quase toda a largura, com margens automáticas */
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 8px;   /* Ajusta o border-radius se necessário */
+    }
+
+    /* Nota sobre 'nav ul': Seu CSS tem um '.menu ul' e um 'nav ul'.
+       Se 'nav ul' for um menu diferente, ele provavelmente precisará de tratamento similar
+       (ex: flex-direction: column). Se for o mesmo menu, as regras de '.menu ul' acima o cobrirão
+       se a especificidade estiver correta ou se 'nav ul' for removido/ajustado para não conflitar.
+       Assumindo que .menu é o principal.
+    */
+    nav ul { /* Se este for um menu diferente e horizontal */
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+}
+
+/* Botão de abrir menu - escondido no desktop */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile: mostrar botão e esconder menu */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+  }
+
+  .menu {
+    display: none; /* Esconde o menu por padrão */
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f1f1f;
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 60px;
+  }
+
+  .menu.show {
+    display: flex; /* Mostra quando tiver a classe .show */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  
+  .cards li img {
+    width: 100%;
+    max-width: 90vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  /* ... (seus outros estilos mobile como .beca, etc.) ... */
+
+  .cards { /* Este é o <nav class="cards"> */
+    display: flex;
+    flex-direction: column; /* Organiza os filhos diretos de .cards em coluna (neste caso, a <ul>) */
+    align-items: center; /* CENTRALIZA os filhos diretos de .cards (a <ul>) horizontalmente */
+    padding: 1.5rem 0;
+    gap: 20px; /* Espaço entre a <ul> e outros elementos se houvesse dentro de .cards */
+    margin-top: 20px;
+    width: 100%; /* Faz .cards ocupar a largura disponível para centralizar seu conteúdo */
+    box-sizing: border-box;
+    /* DESCOMENTE PARA DEBUG VISUAL (cor de fundo para .cards): */
+    /* background-color: rgba(100, 0, 0, 0.1); */
+  }
+
+  .cards ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Faz a <ul> ocupar a largura de .cards */
+    display: flex;
+    flex-direction: column; /* Organiza os <li> em coluna */
+    align-items: center;   /* CENTRALIZA OS <li> (OS CARDS) HORIZONTALMENTE DENTRO DA <ul> */
+    gap: 25px;             /* Espaço entre cada <li> */
+    /* DESCOMENTE PARA DEBUG VISUAL (cor de fundo para .cards ul): */
+    /* background-color: rgba(0, 100, 0, 0.1); */
+  }
+
+  .cards li {
+    width: 90vw;      /* Largura de cada card */
+    max-width: 450px; /* Largura máxima para cada card */
+    background-color: #1f1f1f; /* Sua cor de fundo para o card */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* DESCOMENTE PARA DEBUG VISUAL (cor de fundo para .cards li): */
+    /* background-color: rgba(0, 0, 100, 0.1); */
+  }
+
+  .cards li a {
+    display: block;
+    text-decoration: none;
+  }
+
+  .cards li img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+   .destaque img{
+    width: 100%;
+  }
+
+  /* ... (seus outros estilos mobile para .footer, etc.) ... */
+}
+
+@media (max-width: 768px) {
+  /* ... outros estilos mobile ... */
+
+  .beca {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    /* Ajuste a largura de .beca para melhor se adequar à "imagem branca" de fundo */
+    /* Exemplo: aumente a largura e centralize corretamente */
+    width: 80%; /* Ou o que for visualmente melhor. O anterior era 50% */
+    left: 50%;  /* Para centralizar corretamente com transform: translate(-50%, -50%) */
+    top: 3%;    /* Mantenha ou ajuste verticalmente conforme necessário */
+    z-index: 10;
+    /* margin: 20px auto 0 auto; /* Removido pois position:absolute não usa margin para centralizar assim */
+  }
+
+  .rebeca {
+    width: 100%; /* Correto, para ocupar a largura do .beca */
+    display: flex; /* Garante que é um container flex */
+    flex-direction: row; /* ESSENCIAL: para alinhar os <li> lado a lado */
+    /* align-items: center; /* Mantido - alinha os <li> verticalmente ao centro se tiverem alturas diferentes */
+    /* align-items: stretch; /* Alternativa se quiser que os <li> tenham a mesma altura */
+    gap: 10px; /* Ajuste o espaço entre as caixas de texto. Era 15px */
+    padding: 0; /* Mantido */
+    margin: 0;  /* Mantido */
+    list-style: none; /* Mantido */
+  }
+
+  .rebeca li {
+    flex: 1; /* FAZ OS LIs COMPARTILHAREM O ESPAÇO HORIZONTAL IGUALMENTE */
+    /* Remova ou comente as larguras e max-width que forçavam o empilhamento: */
+    /* width: 90%; */
+    /* max-width: 200px; */
+    /* flex: none; /* Removido para permitir que flex:1 funcione */
+
+    /* Para garantir que o link <a> dentro do <li> ocupe o espaço */
+    display: flex; /* Faz o <li> ser um flex container para o <a> */
+    align-items: stretch; /* Faz o <a> esticar na altura */
+  }
+
+  /* Se você tem um <a> envolvendo o texto-sobre-imagem: */
+  .rebeca li a {
+    display: block; /* Ou flex */
+    width: 100%;
+    height: 100%; /* Para preencher o <li> */
+    text-decoration: none; /* Já existente */
+    color: inherit; /* Para herdar a cor do texto, se necessário */
+  }
+
+  .texto-sobre-imagem,
+  .texto-sobre-imagem2 {
+    background-color: rgba(11, 10, 17, 0.9); /* Mantido */
+    padding: 0.8rem; /* Mantido ou ajuste */
+    border-radius: 6px; /* Mantido */
+    color: white; /* Mantido */
+    width: 100%; /* IMPORTANTE: para ocupar toda a largura do <li> ou <a> pai */
+    box-sizing: border-box; /* Mantido */
+    text-align: center; /* Mantido */
+    height: 100%; /* Para ocupar toda a altura do <li> ou <a> pai, especialmente se usou align-items:stretch */
+
+    /* Adicionado para melhor layout interno se o conteúdo variar muito */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para distribuir o conteúdo interno, opcional */
+  }
+
+  .texto-sobre-imagem h2,
+  .texto-sobre-imagem2 h2 {
+    font-size: 1.2em; /* Mantido */
+    margin-top: 0;    /* Mantido */
+    margin-bottom: 0.2em; /* Mantido */
+  }
+
+  .texto-sobre-imagem p,
+  .texto-sobre-imagem2 p {
+    font-size: 0.9em; /* No seu código original era 1em para p, e 0.9em para desktop. Verifique. */
+                    /* Se for um erro de cópia e no mobile era menor, ajuste. */
+    margin-bottom: 0.4em; /* Mantido */
+    line-height: 1.4; /* Mantido */
+    flex-grow: 1; /* Para o parágrafo ocupar o espaço disponível antes do botão */
+  }
+
+  .botaoaqui button { /* Estilos do botão dentro das caixas */
+     width: 100%; /* Faça o botão ocupar a largura da caixa ou ajuste */
+     /* max-width: 150px; /* Exemplo de largura máxima */
+     margin-top: auto; /* Empurra o botão para baixo se .texto-sobre-imagem for flex column */
+     height: auto; /* Ajustar se necessário */
+     padding: 8px 0; /* Exemplo de padding */
+     font-size: 0.9em; /* Ajustar tamanho da fonte */
+   }
+
+
+}
+
+
+/* ================================================= */
+/* AJUSTES PARA O CRONÔMETRO NA VERSÃO MOBILE      */
+/* ================================================= */
+@media (max-width: 768px) {
+
+  /* 1. Ajustamos o container principal do tempo */
+  .tempo {
+    flex-wrap: wrap;      /* A MÁGICA: Permite que os blocos quebrem para a linha de baixo */
+    justify-content: center;/* Centraliza os blocos */
+    gap: 15px;            /* Define um espaço consistente entre todos os blocos */
+  }
+
+  /* 2. Ajustamos o tamanho de cada bloco de tempo */
+  .bloco-tempo {
+    /* Cada bloco ocupará um pouco menos de 50% para caberem 2 por linha com o espaço (gap) */
+    flex-basis: calc(50% - 10px); 
+    min-width: 0; /* Remove a largura mínima para permitir que ele encolha */
+    padding: 10px 5px; /* Reduz um pouco o padding interno */
+  }
+
+  /* 3. (Opcional) Reduzimos um pouco o tamanho das fontes para caber melhor */
+  .valor {
+    font-size: 2em; /* Ex: Reduzido de 2.5em */
+  }
+
+  .rotulo {
+    font-size: 0.7em; /* Ex: Reduzido de 0.8em */
+  }
+}
+
+
