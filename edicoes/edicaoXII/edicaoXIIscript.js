@@ -1,4 +1,4 @@
-const imagens = ["edicaoXIIassests/XII1.jpg", "edicaoXIIassests/XII2.webp", "edicaoXIIassests/XII3.png"];
+const imagens = ["edicaoXIIassests/XII1.jpg", "edicaoXIIassests/XII2.webp", "edicaoXIIassests/XII3.PNG"];
 let indexAtual = 0;
 
 function abrirLightbox(indice) {
