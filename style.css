@@ -278,7 +278,7 @@ transition: all 0.3s ease;
 /* Estilos base que funcionarão bem no MOBILE PRIMEIRO */
 .sobre {
   margin-top: 60px; /* Margem menor para mobile */
-  background-color: #005c00;
+  background-color: #336e57;
   color: white;
   width: 100%;
   box-sizing: border-box;
