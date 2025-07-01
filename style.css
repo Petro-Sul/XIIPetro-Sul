@@ -215,7 +215,7 @@ nav ul {
   max-width: 700px;
   z-index: 10;
   left: 50%;
-  top:11%;               
+  top:8%;               
   padding: 0;
   margin: 20px auto;
 
@@ -564,7 +564,7 @@ ul.apoiadores {
     /* Exemplo: aumente a largura e centralize corretamente */
     width: 80%; /* Ou o que for visualmente melhor. O anterior era 50% */
     left: 50%;  /* Para centralizar corretamente com transform: translate(-50%, -50%) */
-    top: 3%;    /* Mantenha ou ajuste verticalmente conforme necessário */
+    top: 2%;    /* Mantenha ou ajuste verticalmente conforme necessário */
     z-index: 10;
     /* margin: 20px auto 0 auto; /* Removido pois position:absolute não usa margin para centralizar assim */
   }
